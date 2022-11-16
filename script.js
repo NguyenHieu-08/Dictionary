@@ -7,12 +7,7 @@ function transcript() {
     let result = "";
     for (let i = 0; i < arrEng.length; i++) {
         if (string == arrEng[i]) {
-            // index_eng = i;
-            for (let j = 0; j < arrViet.length; j++) {
-                if (i == j) {
-                    result = arrViet[j];
-                }
-            }
+            result = arrViet[i];
         }
     }
     document.getElementById("result").innerHTML = result;
